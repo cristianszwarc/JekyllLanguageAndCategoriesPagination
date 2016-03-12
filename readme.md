@@ -8,7 +8,7 @@ Copy ```_plugins/LanguageAndCategoriesPagination.rb``` to your ```_plugins``` fo
 
 Create a ```index.html``` file for each required pagination, as an example ```entries_arduino/index.html``` would act as the starting point for the Arduino category.
 
-Each starting point must be called ```index.html``` and it should contain a ```posts_per_page``` variable on the *Front Matter*
+Each starting point must be called ```index.html``` and it should contain a ```posts_per_page``` variable on the *Front Matter* header. Please note: do not specify a permalink on the starting points.
 
 To enable language pagination, specify a ```language``` variable on the *Front Matter* of the starting point and in any post that should be included.
 
