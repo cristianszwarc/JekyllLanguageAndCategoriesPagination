@@ -41,3 +41,15 @@ Showing from {{ page.pagination.from }} to {{ page.pagination.to }} of {{ page.p
 
 <a href="{{page.pagination.next_page_path}}">Next</a>
 ```
+
+Post example
+```
+---
+layout: post
+title:  "Some Arduino news"
+date:   2016-02-28 13:00:00 +1300
+categories: electronic arduino diy
+language: en
+---
+Ut non enim eleifend felis pretium feugiat. Phasellus ullamcorper ipsum rutrum nunc.
+```
