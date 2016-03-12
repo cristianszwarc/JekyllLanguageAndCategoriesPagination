@@ -53,3 +53,11 @@ language: en
 ---
 Ut non enim eleifend felis pretium feugiat. Phasellus ullamcorper ipsum rutrum nunc.
 ```
+
+#### Run the full example ####
+```
+git clone https://github.com/cristianszwarc/JekyllLanguageAndCategoriesPagination.git
+cd JekyllLanguageAndCategoriesPaginaon/
+jekyll serve
+```
+then open http://localhost:4000/
