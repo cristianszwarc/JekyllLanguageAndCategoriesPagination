@@ -61,3 +61,14 @@ cd JekyllLanguageAndCategoriesPaginaon/
 jekyll serve
 ```
 then open http://localhost:4000/
+
+##Screenshots##
+
+*Only pagination, all posts*
+![Only pagination, all posts](screenshots/mixed.png)
+
+*Filtered by language*
+![Filtered by language](screenshots/english.png)
+
+*Filtered by language and category*
+![Filtered by language and category](screenshots/english_arduino.png)
