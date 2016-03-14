@@ -1,5 +1,8 @@
 # Site settings
-title: My bilingual blog
+title:
+  en: My bilingual blog
+  es: Mi blog bilingüe
+
 email: some.one@gmail.com
 
 # Dependencies (adjust as required)

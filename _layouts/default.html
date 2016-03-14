@@ -7,7 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }} - {{ site.title[page.language] }}</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl_root }}">
@@ -17,9 +17,10 @@
 
   <body>
     <div class="container-fluid">
-      <h1>{{ site.title }}</h1>
+      <h1>{{ site.title[page.language] }}</h1>
       <ul>
         <li><a href="/">Home</a></li>
+        <li><a href="/inicio">Spanish Home</a></li>
         <li><a href="/everything/">All entries</a></li>
         <li><a href="/entries/">English entries</a></li>
         <li><a href="/entries_arduino/">English Arduino entries</a></li>
