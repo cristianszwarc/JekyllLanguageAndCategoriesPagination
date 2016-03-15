@@ -5,6 +5,8 @@ title:
 
 email: some.one@gmail.com
 
+baseurl: "/JekyllLanguageAndCategoriesPagination"
+
 # Dependencies (adjust as required)
 markdown: kramdown
 highlighter: rouge

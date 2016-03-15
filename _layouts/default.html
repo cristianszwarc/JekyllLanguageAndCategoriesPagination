@@ -10,8 +10,8 @@
     <title>{{ page.title }} - {{ site.title[page.language] }}</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl_root }}">
-    <link rel="stylesheet" href="{{ "/css/bootstrap-theme.min.css" | prepend: site.baseurl_root }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/bootstrap-theme.min.css" | prepend: site.baseurl }}">
 
   </head>
 
@@ -19,13 +19,13 @@
     <div class="container-fluid">
       <h1>{{ site.title[page.language] }}</h1>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/inicio">Spanish Home</a></li>
-        <li><a href="/everything/">All entries</a></li>
-        <li><a href="/entries/">English entries</a></li>
-        <li><a href="/entries_arduino/">English Arduino entries</a></li>
-        <li><a href="/entradas/">Spanish entries</a></li>
-        <li><a href="/entradas_arduino/">Spanish Arduino entries</a></li>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/inicio">Spanish Home</a></li>
+        <li><a href="{{ site.baseurl }}/everything/">All entries</a></li>
+        <li><a href="{{ site.baseurl }}/entries/">English entries</a></li>
+        <li><a href="{{ site.baseurl }}/entries_arduino/">English Arduino entries</a></li>
+        <li><a href="{{ site.baseurl }}/entradas/">Spanish entries</a></li>
+        <li><a href="{{ site.baseurl }}/entradas_arduino/">Spanish Arduino entries</a></li>
       </ul>
       <hr>
 
