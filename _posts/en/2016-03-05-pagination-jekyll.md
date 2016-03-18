@@ -2,6 +2,7 @@
 layout: post
 title:  "Pagination on Jekyll"
 date:   2016-03-05 13:00:00 +1300
+permalink: /entries/jekyll/2016/jekyll_pagination.html
 categories: web jekyll
 language: en
 ---

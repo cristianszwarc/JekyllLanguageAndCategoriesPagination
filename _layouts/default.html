@@ -18,15 +18,9 @@
   <body>
     <div class="container-fluid">
       <h1>{{ site.title[page.language] }}</h1>
-      <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/inicio">Spanish Home</a></li>
-        <li><a href="{{ site.baseurl }}/everything/">All entries</a></li>
-        <li><a href="{{ site.baseurl }}/entries/">English entries</a></li>
-        <li><a href="{{ site.baseurl }}/entries_arduino/">English Arduino entries</a></li>
-        <li><a href="{{ site.baseurl }}/entradas/">Spanish entries</a></li>
-        <li><a href="{{ site.baseurl }}/entradas_arduino/">Spanish Arduino entries</a></li>
-      </ul>
+
+      {% include menu.html %}
+
       <hr>
 
       {{ content }}

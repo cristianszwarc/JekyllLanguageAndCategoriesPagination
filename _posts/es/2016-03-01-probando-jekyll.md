@@ -2,6 +2,7 @@
 layout: post
 title:  "Probando Jekyll"
 date:   2016-03-01 13:00:00 +1300
+permalink: /entradas/jekyll/2016/probando_jekyll.html
 categories: web jekyll
 language: es
 ---

@@ -2,6 +2,7 @@
 layout: post
 title:  "Nuevo Arduino IDE"
 date:   2016-02-25 13:00:00 +1300
+permalink: /entradas/arduino/2016/nuevo_arduino_ide.html
 categories: electronica arduino diy
 language: es
 ---

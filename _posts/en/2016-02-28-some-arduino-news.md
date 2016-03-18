@@ -2,6 +2,7 @@
 layout: post
 title:  "Some Arduino news"
 date:   2016-02-28 13:00:00 +1300
+permalink: /entries/arduino/2016/some_arduino_news.html
 categories: electronic arduino diy
 language: en
 ---

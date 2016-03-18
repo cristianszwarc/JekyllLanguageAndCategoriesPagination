@@ -2,6 +2,7 @@
 layout: post
 title:  "Testing jekyll"
 date:   2016-03-01 13:00:00 +1300
+permalink: /entries/jekyll/2016/testing_jekyll.html
 categories: web jekyll
 language: en
 ---

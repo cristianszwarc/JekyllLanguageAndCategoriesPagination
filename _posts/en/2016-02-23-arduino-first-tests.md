@@ -2,6 +2,7 @@
 layout: post
 title:  "First tests with Arduino"
 date:   2016-02-23 13:00:00 +1300
+permalink: /entries/arduino/2016/first_test_with_arduino.html
 categories: electronic arduino diy
 language: en
 ---

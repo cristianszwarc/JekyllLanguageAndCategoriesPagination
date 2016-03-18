@@ -64,16 +64,6 @@ jekyll serve
 ```
 then open http://localhost:4000/
 
-##Screenshots##
+##Optional##
 
-*Only pagination, all posts*
-
-![Only pagination, all posts](screenshots/mixed.png)
-
-*Filtered by language*
-
-![Filtered by language](screenshots/english.png)
-
-*Filtered by language and category*
-
-![Filtered by language and category](screenshots/english_arduino.png)
+```_plugins/MenuChoosenUrl.rb``` is not required, but helps to highlight items in a dynamic menu, check ```_includes/menu.html``` for an example.

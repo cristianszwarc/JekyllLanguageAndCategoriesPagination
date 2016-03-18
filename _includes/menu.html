@@ -1,0 +1,30 @@
+<!-- get pages ordered by weight -->
+{% assign pages_list = site.pages | sort:"weight" %}
+
+<ul>
+  {% for node in pages_list and node.title != null %}
+    <!-- include in the menu any node for the active language or the global ones (no language) -->
+    {% if node.language == page.language %}
+      <!-- include pages without pagination or the first page for the paginated ones -->
+      {% if node.pagination == null or node.pagination.current_page == 1 %}
+        <li>
+          <a class="{% if page.choosenUrl == node.url %} label label-primary {% endif %}"
+              href="{{ node.url | prepend: site.baseurl }}">
+            {{ node.title }}
+            {% if node.pagination.total_posts %} ({{ node.pagination.total_posts }}) {% endif %}
+          </a>
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>
+
+Language:
+<a class="{% if page.language == 'es' %} label label-primary {% endif %}"
+    href="{{ '/inicio' | prepend: site.baseurl }}">
+  ES
+</a> /
+<a class="{% if page.language == 'en' %} label label-primary {% endif %}"
+    href="{{ '/' | prepend: site.baseurl }}">
+  EN
+</a>
