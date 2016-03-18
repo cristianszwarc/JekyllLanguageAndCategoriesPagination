@@ -3,6 +3,8 @@ Yet another multilingual pagination plugin for Jekyll
 ### With category support ###
 This is an attempt to have a **simple** multilingual pagination plugin that supports categories.
 
+[Check the demo](http://cristianszwarc.github.io/JekyllLanguageAndCategoriesPagination/)
+
 #### Usage ####
 Copy ```_plugins/LanguageAndCategoriesPagination.rb``` to your ```_plugins``` folder
 
