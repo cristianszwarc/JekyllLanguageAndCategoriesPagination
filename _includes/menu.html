@@ -2,11 +2,11 @@
 {% assign pages_list = site.pages | sort:"weight" %}
 
 <ul>
-  {% for node in pages_list and node.title != null %}
+  {% for node in pages_list %}
     <!-- include in the menu any node for the active language or the global ones (no language) -->
     {% if node.language == page.language %}
-      <!-- include pages without pagination or the first page for the paginated ones -->
-      {% if node.pagination == null or node.pagination.current_page == 1 %}
+      <!-- ignore pages that were cloned by the pagination process -->
+      {% if node.isCloned != true %}
         <li>
           <a class="{% if page.choosenUrl == node.url %} label label-primary {% endif %}"
               href="{{ node.url | prepend: site.baseurl }}">

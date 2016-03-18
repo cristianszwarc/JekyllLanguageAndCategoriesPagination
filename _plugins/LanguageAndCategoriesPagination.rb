@@ -94,6 +94,10 @@ module Jekyll
             # inject the pagination details (containing the filtered posts) into the cloned page
             newpage.data['pagination'] = paginationDetails;
 
+            # flags to allow to not include the cloned pages in the menu, feel free to remove these
+            newpage.data['isCloned'] = true;
+            newpage.data['choosenUrl'] = initialPage.dir; # so the original one can be highlighted
+
             # let Jekyll know about the new page
             site.pages << newpage
           end
