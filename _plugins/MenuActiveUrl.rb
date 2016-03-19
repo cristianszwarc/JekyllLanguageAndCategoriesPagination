@@ -1,5 +1,7 @@
+# Selects the closest url that could be the parent of each page/post
+# Only pages can be parent of other pages or posts
 module Jekyll
-    class MenuChoosenUrl < Generator
+    class MenuActiveUrl < Generator
       safe true
 
       def generate(site)
@@ -17,16 +19,16 @@ module Jekyll
       def selectActiveMenuURL(site, currentPage)
         availablePages = site.pages
 
-        choosenUrl = nil
+        activeUrl = nil
         currentUrl = currentPage.url
-        while choosenUrl == nil do
+        while activeUrl == nil do
 
             # check if the current url matchs against
             # any page that will be included on the menu
             for menuItem in availablePages
               url = menuItem.url
               if currentUrl == url or currentUrl == url.chomp("/")
-                choosenUrl = url
+                activeUrl = url
                 break
               end
             end
@@ -39,8 +41,8 @@ module Jekyll
             end
         end
 
-        # set the choosen url to be activated on the menu
-        currentPage.data['choosenUrl'] = choosenUrl
+        # set the active url to be activated on the menu
+        currentPage.data['activeUrl'] = activeUrl
       end
 
     end

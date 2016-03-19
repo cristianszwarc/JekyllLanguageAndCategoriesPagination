@@ -66,4 +66,4 @@ then open http://localhost:4000/
 
 ##Optional##
 
-```_plugins/MenuChoosenUrl.rb``` is not required, but helps to highlight items in a dynamic menu, check ```_includes/menu.html``` for an example.
+```_plugins/MenuActiveUrl.rb``` is not required, but helps to highlight items in a dynamic menu, check ```_includes/menu.html``` for an example.

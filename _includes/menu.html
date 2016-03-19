@@ -6,9 +6,9 @@
     <!-- include in the menu any node for the active language or the global ones (no language) -->
     {% if node.language == page.language %}
       <!-- ignore pages that were cloned by the pagination process -->
-      {% if node.isCloned != true %}
+      {% if node.clonedFrom == nil %}
         <li>
-          <a class="{% if page.choosenUrl == node.url %} label label-primary {% endif %}"
+          <a class="{% if node.url == page.activeUrl or page.clonedFrom == node.url %} label label-primary {% endif %}"
               href="{{ node.url | prepend: site.baseurl }}">
             {{ node.title }}
             {% if node.pagination.total_posts %} ({{ node.pagination.total_posts }}) {% endif %}
